@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -47,12 +47,26 @@
             </div>
             <div class="flex justify-center items-center mt-20">
                 <div class="w-full max-w-md bg-white rounded-lg p-8">
-                    <h2 class="text-3xl font-bold mb-2 text-center">Forgot Password</h2>
-                    <form class="space-y-4 mt-20">
+                    <h2 class="text-3xl font-bold mb-2 text-center">Welcome Back</h2>
+                    <p class="mb-6 text-center">Login into your account</p>
+                    <form class="space-y-4">
                     <div>
-                        <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-md outline-none mb-10" required>
+                        <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-md outline-none" required>
                     </div>
-                    <button type="submit" class="w-full password  font-medium py-2 px-4 rounded-md hover:bg-grey hover:text-white hover:border-none ">Log In</button>
+                    <div>
+                        <input type="password" id="password" name="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-md outline-none" required>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                        <span class="text-gray-700">Remember me</span>
+                        <label for="remember" class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="remember" name="remember" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-200 rounded-full peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green"></div>
+                        </label>
+                        </div>
+                        <a href="#" class="text-red-600 hover:text-red-800">Recover Password</a>
+                    </div>
+                    <button type="submit" class="w-full password text-grey font-medium py-2 px-4 rounded-md hover:bg-grey hover:text-white">Log In</button>
                     </form>
                 </div>
             </div>
